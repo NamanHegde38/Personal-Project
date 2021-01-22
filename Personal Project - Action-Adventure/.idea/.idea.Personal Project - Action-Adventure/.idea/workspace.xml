@@ -11,12 +11,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
       </list>
     </option>
   </component>
@@ -64,7 +66,9 @@
       <workItem from="1611266826526" duration="24000" />
       <workItem from="1611270160158" duration="334000" />
       <workItem from="1611270511289" duration="913000" />
-      <workItem from="1611271832642" duration="599000" />
+      <workItem from="1611271832642" duration="835000" />
+      <workItem from="1611273183384" duration="10000" />
+      <workItem from="1611356841536" duration="1554000" />
     </task>
     <servers />
   </component>
