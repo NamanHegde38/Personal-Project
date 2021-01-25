@@ -25,6 +25,14 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Dpad"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Melee Attack"",
+                    ""type"": ""Button"",
+                    ""id"": ""f88f12df-03d0-4709-a72a-4cf4e8a39d75"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press""
                 }
             ],
             ""bindings"": [
@@ -137,6 +145,17 @@ public class @InputMaster : IInputActionCollection, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""31a13408-9396-4363-a475-a3084798986a"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard and Mouse"",
+                    ""action"": ""Melee Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -163,6 +182,7 @@ public class @InputMaster : IInputActionCollection, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
+        m_Player_MeleeAttack = m_Player.FindAction("Melee Attack", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -213,11 +233,13 @@ public class @InputMaster : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Player;
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Movement;
+    private readonly InputAction m_Player_MeleeAttack;
     public struct PlayerActions
     {
         private @InputMaster m_Wrapper;
         public PlayerActions(@InputMaster wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
+        public InputAction @MeleeAttack => m_Wrapper.m_Player_MeleeAttack;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -230,6 +252,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @Movement.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @Movement.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
                 @Movement.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMovement;
+                @MeleeAttack.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMeleeAttack;
+                @MeleeAttack.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMeleeAttack;
+                @MeleeAttack.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMeleeAttack;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -237,6 +262,9 @@ public class @InputMaster : IInputActionCollection, IDisposable
                 @Movement.started += instance.OnMovement;
                 @Movement.performed += instance.OnMovement;
                 @Movement.canceled += instance.OnMovement;
+                @MeleeAttack.started += instance.OnMeleeAttack;
+                @MeleeAttack.performed += instance.OnMeleeAttack;
+                @MeleeAttack.canceled += instance.OnMeleeAttack;
             }
         }
     }
@@ -253,5 +281,6 @@ public class @InputMaster : IInputActionCollection, IDisposable
     public interface IPlayerActions
     {
         void OnMovement(InputAction.CallbackContext context);
+        void OnMeleeAttack(InputAction.CallbackContext context);
     }
 }

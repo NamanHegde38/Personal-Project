@@ -1,5 +1,5 @@
 {
-    "name": "Player",
+    "name": "InputMaster",
     "maps": [
         {
             "name": "Player",
@@ -12,6 +12,14 @@
                     "expectedControlType": "Dpad",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Melee Attack",
+                    "type": "Button",
+                    "id": "f88f12df-03d0-4709-a72a-4cf4e8a39d75",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
                 }
             ],
             "bindings": [
@@ -124,6 +132,17 @@
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "31a13408-9396-4363-a475-a3084798986a",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard and Mouse",
+                    "action": "Melee Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

@@ -12,13 +12,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHammer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HammerMelee.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHammer.cs" />
       </list>
     </option>
   </component>
@@ -69,6 +72,10 @@
       <workItem from="1611271832642" duration="835000" />
       <workItem from="1611273183384" duration="10000" />
       <workItem from="1611356841536" duration="2257000" />
+      <workItem from="1611437140911" duration="37000" />
+      <workItem from="1611511149478" duration="599000" />
+      <workItem from="1611576517684" duration="1794000" />
+      <workItem from="1611611121129" duration="3590000" />
     </task>
     <servers />
   </component>

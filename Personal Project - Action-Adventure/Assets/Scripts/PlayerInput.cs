@@ -2,18 +2,22 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour {
 
-    private InputMaster _controls = null;
+    private InputMaster _controls;
     
     private Vector2 _direction;
-    private PlayerMovement _playerMovement;
-
+    private PlayerMovement _movement;
+    private PlayerHammer _hammer;
+    
     private void Awake() {
         SetComponents();
+        _controls.Player.MeleeAttack.performed += ctx => _hammer.MeleeAttack();
     }
 
+    #region Setup
     private void SetComponents() {
         _controls = new InputMaster();
-        _playerMovement = GetComponent<PlayerMovement>();
+        _movement = GetComponent<PlayerMovement>();
+        _hammer = GetComponent<PlayerHammer>();
     }
 
     private void OnEnable() {
@@ -23,13 +27,25 @@ public class PlayerInput : MonoBehaviour {
     private void OnDisable() {
         _controls.Player.Disable();
     }
-
+    #endregion
+    
+    #region Behaviour
     private void Update() {
+        GetDirectionalInput();
+    }
+    
+    private void FixedUpdate() {
+        SetDirectionalInput();
+    }
+    
+    private void GetDirectionalInput() {
         _direction = _controls.Player.Movement.ReadValue<Vector2>();
         _direction.Normalize();
     }
-
-    private void FixedUpdate() {
-        _playerMovement.MovePlayer(_direction);
+    
+    private void SetDirectionalInput() {
+        _movement.MovePlayer(_direction);
     }
+    #endregion
+
 }
