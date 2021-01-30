@@ -212,7 +212,7 @@ namespace sr
               // is the prefab open in the stage?
               PrefabStage stage = PrefabStageUtility.GetCurrentPrefabStage();
               GameObject root = null;
-              if (stage == null || stage.prefabAssetPath != pathInfo.assetPath)
+              if (stage == null || stage.assetPath != pathInfo.assetPath)
               {
                 // this is not the currently open path. open the latest.
                 root = AssetDatabase.LoadAssetAtPath<GameObject>(pathInfo.assetPath);

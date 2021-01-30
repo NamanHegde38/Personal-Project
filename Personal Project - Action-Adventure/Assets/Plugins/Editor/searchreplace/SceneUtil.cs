@@ -51,7 +51,7 @@ namespace sr
 #if UNITY_2018_3_OR_NEWER
       if (IsSceneStage())
       {
-        return PrefabStageUtility.GetCurrentPrefabStage().prefabAssetPath;
+        return PrefabStageUtility.GetCurrentPrefabStage().assetPath;
       }
 #endif
       return EditorSceneManager.GetActiveScene().path;

@@ -27,7 +27,7 @@ namespace sr
       {
         PrefabStage prefabStage = PrefabStageUtility.GetCurrentPrefabStage();
         scene = prefabStage.scene;
-        assetPath = prefabStage.prefabAssetPath;
+        assetPath = prefabStage.assetPath;
         roots = new UnityEngine.Object[] { prefabStage.prefabContentsRoot };
       }else{
         addActiveScene();

@@ -259,9 +259,16 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="PlayerHammer.cs" t="Include" />
-          <e p="PlayerInput.cs" t="Include" />
-          <e p="PlayerMovement.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="PlayerHammer.cs" t="Include" />
+            <e p="PlayerInput.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
+            <e p="State Behaviours" t="Include">
+              <e p="HammerIdle.cs" t="Include" />
+              <e p="HammerTransitionOne.cs" t="Include" />
+              <e p="HammerTransitionTwo.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="~Misc" t="Include">
           <e p="InputMaster.cs" t="Include" />

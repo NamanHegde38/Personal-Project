@@ -1,0 +1,408 @@
+fileFormatVersion: 2
+guid: 58fd42e90c2f7a94ea025ebcd48fecb7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2158964363853825057
+    second: Hammer Attack 1 (1)
+  - first:
+      213: 6685434316296995865
+    second: Hammer Attack 1 (2)
+  - first:
+      213: 7989598854662935433
+    second: Hammer Attack 1 (3)
+  - first:
+      213: -2388690233853839308
+    second: Hammer Attack 1 (4)
+  - first:
+      213: -13305104679131041
+    second: Hammer Attack 2 (1)
+  - first:
+      213: -1678117450224053193
+    second: Hammer Attack 2 (2)
+  - first:
+      213: 1573425134046718359
+    second: Hammer Attack 2 (3)
+  - first:
+      213: 545534044545663961
+    second: Hammer Attack 2 (4)
+  - first:
+      213: -5038277232882809249
+    second: Hammer Attack 3 (1)
+  - first:
+      213: -6966722265888356495
+    second: Hammer Attack 3 (2)
+  - first:
+      213: 2388846287568047355
+    second: Hammer Attack 3 (3)
+  - first:
+      213: 1534804046522590865
+    second: Hammer Attack 3 (4)
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hammer Attack 1 (1)
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 38
+        height: 25
+      alignment: 9
+      pivot: {x: 0.45098034, y: 0.14164306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbf3c98951d902e0800000000000000
+      internalID: -2158964363853825057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer Attack 1 (2)
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 50
+        width: 38
+        height: 25
+      alignment: 9
+      pivot: {x: 0.36461237, y: 0.120354615}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914c618f61f67cc50800000000000000
+      internalID: 6685434316296995865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer Attack 1 (3)
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 50
+        width: 38
+        height: 25
+      alignment: 9
+      pivot: {x: 0.38795492, y: 0.088421784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9835d0ed3d1c0ee60800000000000000
+      internalID: 7989598854662935433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer Attack 1 (4)
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 50
+        width: 38
+        height: 25
+      alignment: 9
+      pivot: {x: 0.38095212, y: 0.08132568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43872bc53eaa9ded0800000000000000
+      internalID: -2388690233853839308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer Attack 2 (1)
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 38
+        height: 25
+      alignment: 9
+      pivot: {x: 0.44864604, y: 0.15228736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58a6e9e31bb0dff0800000000000000
+      internalID: -13305104679131041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer Attack 2 (2)
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 25
+        width: 38
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5373482, y: 0.12390266}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 734d200f11126b8e0800000000000000
+      internalID: -1678117450224053193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer Attack 2 (3)
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 25
+        width: 38
+        height: 25
+      alignment: 9
+      pivot: {x: 0.52100813, y: 0.084873736}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799a683b2dde5d510800000000000000
+      internalID: 1573425134046718359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer Attack 2 (4)
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 25
+        width: 38
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5070026, y: 0.09551796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3c60ab250229700800000000000000
+      internalID: 545534044545663961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer Attack 3 (1)
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 38
+        height: 25
+      alignment: 9
+      pivot: {x: 0.3762838, y: 0.17002775}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f560516fc81741ab0800000000000000
+      internalID: -5038277232882809249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer Attack 3 (2)
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 0
+        width: 38
+        height: 25
+      alignment: 9
+      pivot: {x: 0.44631174, y: 0.21615288}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1778beca20b315f90800000000000000
+      internalID: -6966722265888356495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer Attack 3 (3)
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 0
+        width: 38
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5303453, y: 0.15938349}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc0189ba03e62120800000000000000
+      internalID: 2388846287568047355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hammer Attack 3 (4)
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 38
+        height: 25
+      alignment: 9
+      pivot: {x: 0.52801114, y: 0.16647966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 196afc80628bc4510800000000000000
+      internalID: 1534804046522590865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
