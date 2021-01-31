@@ -4,6 +4,7 @@ public class PlayerHammer : MonoBehaviour {
 
     public static PlayerHammer Instance;
     
+    public Transform particles;
     public Color hitColour = Color.white;
 
     public bool canReceiveInput;
@@ -27,6 +28,10 @@ public class PlayerHammer : MonoBehaviour {
         foreach (var enemy in hitEnemies) {
             enemy.GetComponent<EnemyHandler>().healthSystem.Damage(35);
             Debug.Log(enemy.GetComponent<EnemyHandler>().healthSystem.GetHealth());
+
+            var ray = Physics2D.Raycast(attackPoint.position, enemy.transform.position);
+            var spawnParticles = Instantiate(particles, ray.point, Quaternion.identity);
+            Destroy(spawnParticles.gameObject, 10f);
         }
     }
 
