@@ -13,12 +13,13 @@ GameObject:
   - component: {fileID: 8146953587928436283}
   - component: {fileID: 1558044894473647492}
   - component: {fileID: 7962676939298865699}
+  - component: {fileID: 4572570005200483857}
   - component: {fileID: 4210386816991063245}
   - component: {fileID: 1351353520652569197}
   - component: {fileID: 7685202195603237454}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487585265213459513}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.13596979, y: 0.5616501, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7437147682757372959}
@@ -144,7 +145,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487585265213459513}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: b42fd96980c755a4ab71351544cc08c3, type: 2}
   m_CullingMode: 0
@@ -155,6 +156,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4572570005200483857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487585265213459513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b56516e4107ac604188962d45519b235, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: 100
+  pfHealthBar: {fileID: 5022669366177837419, guid: 7dc773bdff228e044a712f52e91dffad, type: 3}
 --- !u!114 &4210386816991063245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,6 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 319112d18ae76034196b472cc9bea6a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _state: 0
 --- !u!114 &1351353520652569197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,14 +208,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67889e0cdd364cf4ba4513ab2bac9e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitColour: {r: 1, g: 1, b: 1, a: 1}
+  canReceiveInput: 0
+  inputReceived: 0
   attackPoint: {fileID: 7437147682757372959}
   attackRange: 0.75
   enemyLayer:
     serializedVersion: 2
     m_Bits: 0
-  hitColour: {r: 1, g: 1, b: 1, a: 1}
-  canReceiveInput: 0
-  inputReceived: 0
 --- !u!1 &901519567848278950
 GameObject:
   m_ObjectHideFlags: 0

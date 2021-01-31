@@ -21,6 +21,13 @@ public class PlayerHammer : MonoBehaviour {
         if (!canReceiveInput) return;
         inputReceived = true;
         canReceiveInput = false;
+
+        var hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
+
+        foreach (var enemy in hitEnemies) {
+            enemy.GetComponent<EnemyHandler>().healthSystem.Damage(35);
+            Debug.Log(enemy.GetComponent<EnemyHandler>().healthSystem.GetHealth());
+        }
     }
 
     public void MeleeInputManager() {
