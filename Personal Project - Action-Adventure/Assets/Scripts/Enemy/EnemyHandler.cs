@@ -1,4 +1,4 @@
-using System;
+using Pathfinding;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -10,10 +10,19 @@ public class EnemyHandler : MonoBehaviour {
 
     public HealthSystem healthSystem;
 
+    [SerializeField] private float searchDistance;
+    private AIPath _ai;
+
+    private void Awake() {
+        _ai = GetComponent<AIPath>();
+        _ai.canMove = false;
+    }
+
     private void Start() {
         healthSystem = new HealthSystem(enemyHealth);
 
-        var healthBarTransform = Instantiate(pfHealthBar, new Vector3(3.01f, 1.91f), quaternion.identity, transform);
+        var transformVar = transform;
+        var healthBarTransform = Instantiate(pfHealthBar, transformVar.position + new Vector3(0, 0.8f), quaternion.identity, transformVar);
         var healthBar = healthBarTransform.GetComponent<HealthBar>();
         healthBar.Setup(healthSystem);
     }
@@ -25,8 +34,18 @@ public class EnemyHandler : MonoBehaviour {
     }
 
     private void Update() {
+        
         if (healthSystem.GetHealth() == 0) {
             Destroy(gameObject);
         }
+        
+        if (_ai.remainingDistance <= searchDistance) {
+            _ai.canMove = true;
+        }
+    }
+    
+    private void OnDrawGizmosSelected() {
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(transform.position, searchDistance);
     }
 }
