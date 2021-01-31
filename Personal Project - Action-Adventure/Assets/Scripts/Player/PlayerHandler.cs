@@ -1,5 +1,6 @@
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHandler : MonoBehaviour {
 
@@ -21,5 +22,10 @@ public class PlayerHandler : MonoBehaviour {
             Destroy(gameObject);
         }
     }
-    
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.CompareTag("Win")) {
+            SceneManager.LoadScene(1);
+        }
+    }
 }
